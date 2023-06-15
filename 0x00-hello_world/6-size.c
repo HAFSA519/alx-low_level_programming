@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-* main - Entry point
+* main - Prints the size of various typesa based on
 *
-* Return: Always 0 (Success)
+* Return: Always 0. (Success)
 */
 int main(void)
 {
