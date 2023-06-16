@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 /**
  * main - Entry point
@@ -14,18 +12,18 @@ int main(void)
 
 {
 
-	int i = 'a';
+	char i = 'a';
 
 	while (i <= 'z')
 	{
 		if (i == 'e' && i == 'q')
 		{
-			i += 1;
+			i++;
 		}
 		else
 		{
 		putchar(i);
-		i += 1;
+		i++;
 		}
 	}
 		putchar('\n');
