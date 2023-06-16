@@ -11,17 +11,21 @@
  */
 
 int main(void)
+
 {
-	int i;
 
-	e = 'e';
-	q = 'q';
+	int i = 'a';
 
-	for (i = 97; i <= 123; i++)
+	while (i <= 'z')
 	{
-		if (i != 101 && i != 113)
+		if (i == 'e' && i == 'q')
 		{
-			putchar(i);
+			i += 1;
+		}
+		else
+		{
+		putchar(i);
+		i += 1;
 		}
 	}
 		putchar('\n');
