@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 /**
  * main - Entry point
  *
@@ -11,15 +12,17 @@
 
 int main(void)
 {
-	char c, e, q;
+	int i;
 
 	e = 'e';
 	q = 'q';
 
-	for (c = 'a'; c <= 'z'; c++)
+	for (i = 97; i <= 123; i++)
 	{
-		if (c != 'e' || c != 'q')
-		putchar(c);
+		if (i != 101 && i != 113)
+		{
+			putchar(i);
+		}
 	}
 		putchar('\n');
 		return (0);
