@@ -10,14 +10,16 @@
 
 int main(void)
 {
-	char c = 'a';
+	char c, e, q;
 
-	while (c <= 'z')
+	e = 'e';
+	q = 'q';
+
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		if (c == 'e' || c == 'q')
-			c++;
+		if (c != 'e' || c != 'q')
+		putchar(c);
 	}
 		putchar('\n');
-
 		return (0);
 }
