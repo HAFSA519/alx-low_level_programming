@@ -1,19 +1,17 @@
-#include <stdlib.h>
 #include <stdio.h>
-/**
- * main - Entry the point of the program
- *
- * Return: 0 (SUCCESS°
- */
 
+/**
+ * main - Prints numbers from 0 to 9.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	char number[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
-	int index;
+	int i;
 
-	for (index = 0; index <= 9; index++)
+	for (i = 48; i < 58; i++)
 	{
-		putchar(numberz[index]);
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);
