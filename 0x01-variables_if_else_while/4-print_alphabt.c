@@ -1,31 +1,23 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 /**
- * main - Entry point
- *
- * Description: print all alphabet letters except q and e
+ * main - Prints the alphabet without q and e.
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
-
 {
+	int i;
 
-	char i = 'a';
-
-	while (i <= 'z')
+	for (i = 97; i < 123; i++)
 	{
-		if (i == 'e' && i == 'q')
+		if (i != 101 && i != 113)
 		{
-			i++;
-		}
-		else
-		{
-		putchar(i);
-		i++;
+			putchar(i);
 		}
 	}
 	putchar('\n');
-		return (0);
+	return (0);
 }
