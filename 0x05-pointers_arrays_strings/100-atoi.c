@@ -14,16 +14,17 @@ int digit, i, len, m, f, a;
 
 i = 0;
 m = 0;
+len = 0;
 digit = 0;
 f = 0;
 a = 0;
 
-while (s[len] != '0')
+while (s[len] != '\0')
 len++;
 while (i < len && f == 0)
 {
 if (s[i] == '-')
-m++;
+++m;
 if (s[i] >= '0' && s[i] <= '9')
 {
 digit = s[i] - '0';
