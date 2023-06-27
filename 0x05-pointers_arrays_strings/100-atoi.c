@@ -8,19 +8,18 @@
  */
 
 
-int atoi(const char *s)
+int _atoi(char *s)
 {
-int difit = 0;
-int s = 0;
-int len = 0;
-int m = 0;
-int f = 0
-int a = 0;
+int digit, i, len, m, f, a;
 
-while (s[len] == ' ')
-{
+i = 0;
+m = 0;
+digit = 0;
+f = 0;
+a = 0;
+
+while (s[len] != '0')
 len++;
-}
 while (i < len && f == 0)
 {
 if (s[i] == '-')
@@ -42,5 +41,5 @@ i++;
 }
 if (f == 0)
 return (0);
-return (n);
+return (a);
 }
