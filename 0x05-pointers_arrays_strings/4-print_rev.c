@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_rev - imprime en reverse
@@ -8,16 +9,16 @@
 
 void print_rev(char *s)
 {
-	int long1 = 0;
+	int a = 0;
 	int o;
 
 	while (*s != '\0')
 	{
-		long1++;
+		a++;
 		s++;
 	}
 	s--;
-	for (o = long1; o > 0; o++)
+	for (o = a; o > 0; o++)
 	{
 		_putchar(*s);
 		s--;
