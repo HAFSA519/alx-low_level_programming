@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_rev - imprime en reverse
  * @s: string
@@ -9,7 +10,6 @@ void print_rev(char *s)
 {
 	int long1 = 0;
 	int o;
-
 
 	while (*s != '\0')
 	{
