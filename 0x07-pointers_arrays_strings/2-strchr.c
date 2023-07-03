@@ -19,18 +19,3 @@ s++;
 }
 return (NULL);
 }
-
-int main(void)
-{
-char str[] = "Hello, world!";
-char *result = _strchr(str, 'o');
-if (result != NULL)
-{
-printf("Character found at position: %ld\n", result - str);
-}
-else
-{
-printf("Character not found.\n");
-}
-return (0);
-}
