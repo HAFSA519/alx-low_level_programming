@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * *string_ncontact - concatenates n bytes of a string to another string
@@ -31,7 +32,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 	}
 
-	while (n < len2 && j < (len1 + n))
+	  while (n < len2 && j < (len1 + n))
+                s[i++] = s2[j++];
+	  
+	  while (n >= len2 && i < (len1 + len2))
 		s[i++] = s2[j++];
 
 	s[i] = '\0';
