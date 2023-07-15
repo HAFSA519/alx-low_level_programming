@@ -30,14 +30,14 @@ int is_digit(char *s)
  * Return: the length of the string
  */
 int _strlen(char *s)
-{	
+{
 	int i = 0;
 
-	while (s[i] != '\0')	
+	while (s[i] != '\0')
 	{
-		i++;	
+		i++;
 	}
-	return (i);		
+	return (i);
 }
 
 /**
@@ -92,13 +92,13 @@ int main(int argc, char *argv[])
 			carry /= 10;
 		}
 		if (carry > 0)
-			result[len1 + len2 + 1] += carry;	
+			result[len1 + len2 + 1] += carry;
 	}
 	for (i = 0; i < len - 1; i++)
 	{
 		if (result[i])
 			a = 1;
-		if (a)
+		if (a) 
 			_putchar(result[i] + '0');
 	}
 	if (!a)
